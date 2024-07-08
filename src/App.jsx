@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import LiveEvents from './components/LiveEvents/LiveEvents';
 
-const App = () => {
+const App = () =>  {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (

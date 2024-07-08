@@ -1,0 +1,126 @@
+.reservations_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.reservations {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  transform: translateY(55px);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Added max-width to limit the width of the form */
+}
+
+.reservations h2 {
+  text-align: center;
+  font-family: font2;
+  font-size: 1cm;
+}
+
+.reservations_form {
+  padding: 20px;
+  font-family: poppins;
+  font-size: 20px;
+}
+
+.reservations_form button {
+  font-family: poppins;
+  font-size: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 100%;
+  background-color: #007bff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.name_and_email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ne_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservations_form input {
+  border: 0;
+  border-radius: 5px;
+  width: 200px;
+  padding: 7px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .reservations {
+    transform: translateY(20px);
+  }
+  
+  .reservations_form {
+    font-size: 18px;
+  }
+  
+  .reservations_form input {
+    width: 100%;
+  }
+  
+  .name_and_email {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reservations {
+    transform: translateY(10px);
+  }
+  
+  .reservations_form {
+    font-size: 16px;
+  }
+  
+  .reservations_form button {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservations {
+    transform: translateY(0px);
+  }
+  
+  .reservations_form {
+    font-size: 14px;
+  }
+  
+  .reservations_form button {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
